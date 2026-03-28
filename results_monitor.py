@@ -34,7 +34,7 @@ class ResultsMonitor:
         telegram_chat_ids=None,
     ):
 
-        self.monitor_url = "https://result.doenets.lk/result/service/examDetails"
+        self.monitor_url = os.environ.get("MONITOR_URL", "https://result.doenets.lk/result/service/examDetails")
         self.email_address = email_address
         self.email_password = email_password
         self.check_interval = check_interval
