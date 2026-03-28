@@ -1,5 +1,6 @@
 test.py
-*.txt
+exam_hash.txt
+monitor_log.txt
 *.json
 __pycache__/
 .env
